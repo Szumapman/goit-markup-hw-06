@@ -11,6 +11,7 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
+  --common-black: #2f2f37;
   --bg-top-banner-gradient: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
@@ -82,9 +83,10 @@ p {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  /* min-width: 320px; */
 }
 
 .section-common {
@@ -137,6 +139,10 @@ p {
   transition: color var(--default-transision);
 }
 
+.main-nav.address {
+  flex-direction: row;
+}
+
 .underlined {
   padding: 24px 0;
   position: relative;
@@ -156,6 +162,24 @@ p {
 .address {
   font-style: normal;
   color: var(--slate);
+}
+
+.hamburger-menu {
+  display: none;
+  position: relative;
+  background: none;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--common-black);
 }
 
 .top-baner-section {
@@ -787,4 +811,21 @@ p {
 .modal-form-submit-button:focus {
   background-color: var(--ocean);
   transition: background-color var(--default-transision);
+}
+
+@media (width<=768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media (768px<width<=1158px) {
+  .main-nav.address {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
