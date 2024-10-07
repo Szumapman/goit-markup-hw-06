@@ -48,6 +48,80 @@
           <use href="./images/icons.svg#icon-hamburger-menu"></use>
         </svg>
       </button>
+      <div class="mobile-nav" id="mobile-nav">
+        <nav class="mobile-nav-column">
+          <button
+            type="button"
+            class="close-button right"
+            id="mobile-nav-close-btn"
+          >
+            <svg class="close-button-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list">
+            <li><a href="" class="nav-item ocean">Studio</a></li>
+            <li><a href="" class="nav-item">Portfolio</a></li>
+            <li><a href="" class="nav-item">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="mobile-nav-address-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="address nav-item iris"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="address nav-item"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-social-media-list mobile-nav-social-media-list">
+          <li>
+            <a
+              href=""
+              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+            >
+              <svg class="footer-social-media-list-item-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+            >
+              <svg class="footer-social-media-list-item-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+            >
+              <svg class="footer-social-media-list-item-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+            >
+              <svg class="footer-social-media-list-item-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="top-baner-section">
@@ -479,8 +553,8 @@
     <div class="backdrop">
       <!-- <div class="backdrop is-open"> -->
       <div class="modal">
-        <button type="button" class="modal-close-button">
-          <svg class="modal-close-button-icon" width="8" height="8">
+        <button type="button" class="close-button">
+          <svg class="close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -559,5 +633,19 @@
         </form>
       </div>
     </div>
+
+    <script>
+      const OPEN_CLASS = "is-open";
+      const moblieNav = document.querySelector("#mobile-nav");
+      const openMoblileNav = () => moblieNav.classList.add(OPEN_CLASS);
+      const closeMoblieNav = () => moblieNav.classList.remove(OPEN_CLASS);
+
+      document
+        .querySelector("#hamburger-menu")
+        .addEventListener("click", openMoblileNav);
+      document
+        .querySelector("#mobile-nav-close-btn")
+        .addEventListener("click", closeMoblieNav);
+    </script>
   </body>
 </html>
