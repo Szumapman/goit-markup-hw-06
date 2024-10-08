@@ -19,10 +19,10 @@
 
   <body>
     <header class="header container">
+      <a href="./index.html" class="nav-item logo"
+        >Web<span class="nav-item logo-dark">studio</span></a
+      >
       <nav class="navigation">
-        <a href="./index.html" class="nav-item logo"
-          >Web<span class="nav-item logo-dark">studio</span></a
-        >
         <ul class="main-nav">
           <li><a href="" class="nav-item underlined">Studio</a></li>
           <li><a href="" class="nav-item">Portfolio</a></li>
@@ -79,13 +79,13 @@
             </li>
           </ul>
         </address>
-        <ul class="footer-social-media-list mobile-nav-social-media-list">
+        <ul class="social-media-list mobile-nav-social-media-list">
           <li>
             <a
               href=""
-              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+              class="social-media-list-item-link mobile-nav-social-media-list-item-link"
             >
-              <svg class="footer-social-media-list-item-icon">
+              <svg class="social-media-list-item-icon">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -93,9 +93,9 @@
           <li>
             <a
               href=""
-              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+              class="social-media-list-item-link mobile-nav-social-media-list-item-link"
             >
-              <svg class="footer-social-media-list-item-icon">
+              <svg class="social-media-list-item-icon">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -103,9 +103,9 @@
           <li>
             <a
               href=""
-              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+              class="social-media-list-item-link mobile-nav-social-media-list-item-link"
             >
-              <svg class="footer-social-media-list-item-icon">
+              <svg class="social-media-list-item-icon">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -113,9 +113,9 @@
           <li>
             <a
               href=""
-              class="footer-social-media-list-item-link mobile-nav-social-media-list-item-link"
+              class="social-media-list-item-link mobile-nav-social-media-list-item-link"
             >
-              <svg class="footer-social-media-list-item-icon">
+              <svg class="social-media-list-item-icon">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -127,13 +127,15 @@
       <section class="top-baner-section">
         <div class="container top-baner-container">
           <h1 class="title">Effective Solutions<br />for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" id="order-service-contact-modal">
+            Order Service
+          </button>
         </div>
       </section>
 
       <section class="section-common">
         <div class="container">
-          <h2 class="hidden">Our our-strengths</h2>
+          <h2 class="hidden">Our strengths</h2>
           <ul class="our-strengths-list">
             <li class="our-strengths-item">
               <div class="our-strengths-item-icon-box">
@@ -194,6 +196,10 @@
             <ul class="team-card list">
               <li class="list">
                 <img
+                  srcset="
+                    ./images/mark_guerrero.jpg    1x,
+                    ./images/mark_guerrero@2x.jpg 2x
+                  "
                   src="./images/mark_guerrero.jpg"
                   alt="Middle-aged man with a beard"
                 />
@@ -233,7 +239,11 @@
                 </div>
               </li>
               <li class="list">
-                <img src="./images/tom_ford.jpg" alt="Smiling young man" />
+                <img
+                  srcset="./images/tom_ford.jpg 1x, ./images/tom_ford@2x.jpg 2x"
+                  src="./images/tom_ford.jpg"
+                  alt="Smiling young man"
+                />
                 <div class="team-member-name-job">
                   <h3>Tom Ford</h3>
                   <p>Frontend Developer</p>
@@ -270,7 +280,14 @@
                 </div>
               </li>
               <li class="list">
-                <img src="./images/camila_garcia.jpg" alt="Young woman" />
+                <img
+                  srcset="
+                    ./images/camila_garcia.jpg    1x,
+                    ./images/camila_garcia@2x.jpg 2x
+                  "
+                  src="./images/camila_garcia.jpg"
+                  alt="Young woman"
+                />
                 <div class="team-member-name-job">
                   <h3>Camila Garcia</h3>
                   <p>Marketing</p>
@@ -308,6 +325,10 @@
               </li>
               <li class="list">
                 <img
+                  srcset="
+                    ./images/daniel_wilson.jpg    1x,
+                    ./images/daniel_wilson@2x.jpg 2x
+                  "
                   src="./images/daniel_wilson.jpg"
                   alt="Young smilling man with a beard"
                 />
@@ -352,12 +373,16 @@
       </section>
 
       <section class="section-common">
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/banking_app.jpg    1x,
+                    ./images/banking_app@2x.jpg 2x
+                  "
                   src="./images/banking_app.jpg"
                   alt="some screenshots from the bank's app"
                 />
@@ -377,6 +402,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/cashless_payment.jpg    1x,
+                    ./images/cashless_payment@2x.jpg 2x
+                  "
                   src="./images/cashless_payment.jpg"
                   alt="someone pays cashless"
                 />
@@ -396,6 +425,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/meditation_app.jpg    1x,
+                    ./images/meditation_app@2x.jpg 2x
+                  "
                   src="./images/meditation_app.jpg"
                   alt="a laptop and a smartphone running the app"
                 />
@@ -416,6 +449,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/taxi_service.jpg    1x,
+                    ./images/taxi_service@2x.jpg 2x
+                  "
                   src="./images/taxi_service.jpg"
                   alt="smartphone fixed in the car with the taxi-app enabled"
                 />
@@ -436,6 +473,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/screen_illustrations.jpg    1x,
+                    ./images/screen_illustrations@2x.jpg 2x
+                  "
                   src="./images/screen_illustrations.jpg"
                   alt="some screenshots from the screen illustrations"
                 />
@@ -456,6 +497,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-photo-description">
                 <img
+                  srcset="
+                    ./images/online_courses.jpg    1x,
+                    ./images/online_courses@2x.jpg 2x
+                  "
                   src="./images/online_courses.jpg"
                   alt="young woman with headphones looking at her smartphone"
                 />
@@ -489,33 +534,33 @@
             digital <br />marketing &amp; growth solutions.
           </p>
         </div>
-        <div class="footer-social-media">
+        <div>
           <h4 class="footer-header">Social media</h4>
-          <ul class="footer-social-media-list">
+          <ul class="social-media-list">
             <li>
-              <a href="" class="footer-social-media-list-item-link">
-                <svg class="footer-social-media-list-item-icon">
+              <a href="" class="social-media-list-item-link">
+                <svg class="social-media-list-item-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="footer-social-media-list-item-link">
-                <svg class="footer-social-media-list-item-icon">
+              <a href="" class="social-media-list-item-link">
+                <svg class="social-media-list-item-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="footer-social-media-list-item-link">
-                <svg class="footer-social-media-list-item-icon">
+              <a href="" class="social-media-list-item-link">
+                <svg class="social-media-list-item-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="footer-social-media-list-item-link">
-                <svg class="footer-social-media-list-item-icon">
+              <a href="" class="social-media-list-item-link">
+                <svg class="social-media-list-item-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -526,7 +571,7 @@
           <form class="footer-subscribe-form">
             <label
               for="footer-subscribe-email"
-              class="footer-subscribe-form-label footer-heder"
+              class="footer-subscribe-form-label footer-header"
             >
               Subscribe
             </label>
@@ -550,10 +595,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
-      <!-- <div class="backdrop is-open"> -->
+    <div class="backdrop" id="backdrop">
       <div class="modal">
-        <button type="button" class="close-button">
+        <button type="button" class="close-button" id="backdrop-close-btn">
           <svg class="close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -636,6 +680,7 @@
 
     <script>
       const OPEN_CLASS = "is-open";
+
       const moblieNav = document.querySelector("#mobile-nav");
       const openMoblileNav = () => moblieNav.classList.add(OPEN_CLASS);
       const closeMoblieNav = () => moblieNav.classList.remove(OPEN_CLASS);
@@ -646,6 +691,17 @@
       document
         .querySelector("#mobile-nav-close-btn")
         .addEventListener("click", closeMoblieNav);
+
+      const backdrop = document.querySelector("#backdrop");
+      const openBackdrop = () => backdrop.classList.add(OPEN_CLASS);
+      const closeBackdrop = () => backdrop.classList.remove(OPEN_CLASS);
+
+      document
+        .querySelector("#order-service-contact-modal")
+        .addEventListener("click", openBackdrop);
+      document
+        .querySelector("#backdrop-close-btn")
+        .addEventListener("click", closeBackdrop);
     </script>
   </body>
 </html>
