@@ -580,7 +580,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* width: 453px; */
 }
 
 .footer-subscribe-form-label {
@@ -594,8 +593,6 @@ img {
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  /* padding: 0 0 96px 0; */
-  /* justify-content: space-between; */
 }
 
 .footer-subscribe-input {
