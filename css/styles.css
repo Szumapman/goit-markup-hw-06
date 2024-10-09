@@ -250,6 +250,7 @@ img {
 }
 
 .social-media-list.mobile-nav-social-media-list {
+  width: 280px;
   gap: 40px;
   justify-content: space-between;
 }
@@ -451,8 +452,6 @@ img {
   align-items: center;
   gap: 48px;
   width: 288px;
-  /* max-width: 1128px; */
-  
 }
 .portfolio-list-item {
   display: flex;
