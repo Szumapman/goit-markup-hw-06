@@ -149,6 +149,10 @@ img {
   transition: color var(--default-transision);
 }
 
+.main-nav a {
+  color: var(--navy-blue);
+}
+
 .main-nav.address {
   flex-direction: row;
 }
