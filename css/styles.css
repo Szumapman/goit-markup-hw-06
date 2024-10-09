@@ -1057,19 +1057,19 @@ img {
   @media (width<768px) {
     .top-baner-section {
       background-image: var(--bg-top-banner-gradient),
-        url(../images/hero_image_mobile@2.jpg);
+        url(../images/hero_image_mobile@2x.jpg);
     }
   }
   @media (768px<=width<=1158px) {
     .top-baner-section {
       background-image: var(--bg-top-banner-gradient),
-        url(../images/hero_image_tablet@2.jpg);
+        url(../images/hero_image_tablet@2x.jpg);
     }
   }
   @media (width>1158px) {
     .top-baner-section {
       background-image: var(--bg-top-banner-gradient),
-        url(../images/hero_image_desktop@2.jpg);
+        url(../images/hero_image_desktopx.jpg);
     }
   }
 }
