@@ -934,6 +934,10 @@ img {
   .main-nav.address {
     flex-direction: column;
     gap: 12px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    font-weight: 400;
   }
   .top-baner-section {
     background-image: var(--bg-top-banner-gradient),
