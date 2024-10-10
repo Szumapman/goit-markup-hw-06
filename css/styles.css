@@ -675,8 +675,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   padding: 24px;
   background-color: var(--dairy);
   box-shadow: var(--modal-shadow);
@@ -925,11 +925,6 @@ img {
   .hamburger-menu {
     display: block;
   }
-  .modal {
-    width: calc(100% - 32px);
-    min-width: 288px;
-    min-height: 623px;
-  }
 }
 
 
@@ -953,7 +948,6 @@ img {
   .our-strengths-list {
     gap: 24px;
     width: 736px;
-    /* justify-content: space-between; */
   }
 
   .our-strengths-item {
@@ -1055,6 +1049,10 @@ img {
   .footer-subscribe-form-input-button { 
     flex-direction: row;
     justify-content: space-between;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 
